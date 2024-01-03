@@ -4,6 +4,7 @@ projekt_1.py: první projekt do Engeto Online Python Akademie
 author: Ivo Fiala
 email: fiala.ivo@spszr.cz
 discord: ivofiala
+description: ahoj, projek jsem dělal z velké části už před včerejší hodinou tak, tam budou asi některé věci řešené trošku těžkopádně, kdyby s tím byl nějaký problém tak dej vědět
 """
 
 TEXTS = ['''
