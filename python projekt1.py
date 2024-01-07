@@ -77,24 +77,24 @@ if (reg_users.get(user) and password == reg_users.get(user)):
 			if length > max_length:
 				max_length = length
 			len_words.append(length)
-		print(max_length)
-		print(len_words)
+		"""print(max_length)
+		print(len_words)"""
 		for i in range (max_length+1):
 			count_len_words.append(len_words.count(i))
-			print(count_len_words)
+			"""print(count_len_words)"""
 		print(f"There are {count_istitle} titlecase words.")
 		print(f"There are {count_isupper} uppercase words.")
 		print(f"There are {count_islower} lowercase words.")
 		print(f"There are {count_isnumeric} numeric strings.")
 		print(f"The sum of all the numbers {sum}")
 		print(line)
-		print(f"LEN|{"OCCURENCES":^18}|NR.")
+		print(f"LEN|{'OCCURENCES':^18}|NR.")
 		print(line)
 		
 		for i in range (1, max_length+1):
 			pocet_hvezdicek = "*" * count_len_words[i]
 			if count_len_words[i] != 0:
-				print(f" {i:>2}|{"*" * count_len_words[i]:<18}|{count_len_words[i]}")
+				print(f" {i:>2}|{'*' * count_len_words[i]:<18}|{count_len_words[i]}")
 	else:
 		print("Invalid input, terminating the program..")
 else:
