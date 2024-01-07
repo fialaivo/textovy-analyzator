@@ -38,16 +38,18 @@ garpike and stingray are also present.'''
 reg_users = {"bob": "123", "ann": "pass123", "mike": "password123", "liz": "pass123" }
 line = "-" * 40
 
+count_texts = len(TEXTS)
+
 user = input("username:")
 password = input("password:")
 print(line)
 
 if (reg_users.get(user) and password == reg_users.get(user)):
 	print(f"Welcome to the app, {user}")
-	print("We have 3 texts to be analyzed.")
+	print(f"We have {count_texts} texts to be analyzed.")
 	print(line)
-	text_number=input("Enter a number btw. 1 and 3 to select:")
-	if text_number.isdigit() and (int(text_number) > 0 and int(text_number) < 4):
+	text_number=input(f"Enter a number btw. 1 and {count_texts} to select:")
+	if text_number.isdigit() and (int(text_number) > 0 and int(text_number) <= count_texts):
 		text_number = int(text_number)
 		print(line)
 
