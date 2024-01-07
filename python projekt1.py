@@ -51,7 +51,7 @@ if (reg_users.get(user) and password == reg_users.get(user)):
 		text_number = int(text_number)
 		print(line)
 
-		words =  TEXTS[text_number - 1].replace(",","").replace(".","").split()
+		words =  TEXTS[text_number - 1].strip(",.").split()
 		count_words = len(words)
 		print(f"There are {count_words} words in the selected text.")
 
